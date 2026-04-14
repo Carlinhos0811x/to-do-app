@@ -1,63 +1,52 @@
-# To-Do List com Prioridades
+# Projeto To-Do List
 
-## Descrição
-Uma aplicação web simples e acessível para gerenciar tarefas pessoais, organizada por prioridades. Desenvolvida como parte de um desafio de IA no desenvolvimento de software, focando em HTML semântico, CSS responsivo e JavaScript vanilla.
+Este repositório contém uma aplicação simples de lista de tarefas em HTML, CSS e JavaScript.
 
-## Funcionalidades
-- ✅ Adicionar novas tarefas com seleção de prioridade (Alta, Média, Baixa)
-- ✅ Marcar tarefas como concluídas ou pendentes
-- ✅ Interface visual intuitiva com cores para prioridades
-- ✅ Design responsivo e acessível
-- ✅ Funcionamento offline (apenas HTML/CSS/JS)
+## Arquivos do projeto
 
-## Como Usar
-1. **Abrir a aplicação**: Clique duas vezes no arquivo `index.html` ou abra-o em qualquer navegador web moderno.
-2. **Adicionar tarefa**:
-   - Digite o nome da tarefa no campo de texto.
-   - Selecione a prioridade no menu suspenso.
-   - Clique no botão "Adicionar" ou pressione Enter.
-3. **Gerenciar tarefas**:
-   - Clique em "Concluir" para marcar uma tarefa como feita (ela ficará riscada e o botão mudará para "Concluída").
-   - Clique novamente para reverter.
+- `index.html` - página principal da aplicação.
+- `style.css` - estilos de layout, prioridade das tarefas e estados concluídos.
+- `script.js` - lógica para criar e gerenciar tarefas na interface.
 
-## Estrutura do Projeto
-```
-prompt.to-do.list/
-├── index.html          # Página principal da aplicação
-├── css/
-│   └── style.css       # Arquivo de estilos CSS
-├── js/
-│   └── script.js       # Lógica JavaScript para interatividade
-└── README.md           # Este arquivo
-```
+## O que já está implementado
 
-## Tecnologias Utilizadas
-- **HTML5**: Estrutura semântica e acessível
-- **CSS3**: Estilos responsivos e design visual
-- **JavaScript (Vanilla)**: Funcionalidades interativas sem frameworks
+- Adição de tarefas a partir de um campo de texto.
+- Seleção de prioridade para cada tarefa: alta, média ou baixa.
+- Inserção de data e hora de criação da tarefa.
+- Botão para marcar tarefas como concluídas.
+- Estilo visual diferenciado por prioridade e status de conclusão.
 
-## Pré-requisitos
-- Navegador web moderno (Chrome, Firefox, Edge, etc.)
-- Não requer instalação de dependências ou servidor
+## Estado atual
 
-## Como Executar
-1. Baixe ou clone o repositório.
-2. Navegue até a pasta do projeto.
-3. Abra o arquivo `index.html` diretamente no navegador.
+- `style.css` e `script.js` estão implementados com as funcionalidades básicas.
+- `index.html` ainda precisa ser preenchido com a estrutura HTML da aplicação.
+- Não há persistência de dados salva no navegador ainda.
 
-**Nota**: Como é uma aplicação estática, funciona offline após o carregamento inicial.
+## Como completar o projeto
 
-## Melhorias Futuras
-- [ ] Adicionar funcionalidade de editar tarefas
-- [ ] Implementar filtros por prioridade
-- [ ] Salvar tarefas no localStorage para persistência
-- [ ] Adicionar animações suaves com CSS
+1. Criar o formulário em `index.html` com:
+   - Um campo de entrada de texto para a tarefa.
+   - Um seletor de prioridade (`high`, `medium`, `low`).
+   - Um botão para adicionar a tarefa.
+   - Uma lista (`<ul>` ou `<ol>`) para exibir as tarefas.
+2. Referenciar `style.css` e `script.js` em `index.html`.
+3. Abrir `index.html` no navegador para testar a aplicação.
 
-## Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias.
+## Sugestões de melhorias
 
-## Licença
-Este projeto é de código aberto e pode ser usado livremente para fins educacionais.
+1. Adicionar `localStorage` para salvar tarefas entre recargas de página.
+2. Criar botões para editar e remover tarefas.
+3. Implementar filtragem e ordenação por prioridade ou status concluído.
+4. Adicionar validação de entrada para evitar tarefas vazias e mostrar mensagens de erro.
+5. Tornar a interface responsiva para celular e tablet.
+6. Ajustar os caminhos de `style.css` e `script.js` caso os arquivos sejam movidos para as pastas `css/` e `js/`.
 
-## Autor
-Desenvolvido como parte de um desafio de IA no Desenvolvimento de Software.
+## Tarefas pendentes (para preencher)
+
+- [ ] Criar a estrutura HTML completa em `index.html` com formulário e lista de tarefas.
+- [ ] Configurar `localStorage` em `script.js` para carregar e salvar tarefas.
+- [ ] Adicionar funcionalidade de edição de tarefa.
+- [ ] Adicionar funcionalidade de exclusão de tarefa.
+- [ ] Implementar filtros por prioridade e por estado concluído.
+- [ ] Melhorar a validação do formulário e as mensagens exibidas ao usuário.
+- [ ] Ajustar o layout para ser responsivo e funcionar em dispositivos móveis.
