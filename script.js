@@ -1,6 +1,6 @@
 const newTaskInput = document.getElementById('new-task');
 const todoList = document.querySelector('.todo-list');
-let nextTaskId = 4;
+let nextTaskId = 6;
 
 newTaskInput.addEventListener('keydown', (event) => {
   if (event.key !== 'Enter') {
